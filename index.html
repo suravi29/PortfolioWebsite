@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suravi Prakash | Portfolio</title>
+  <meta name="description" content="Portfolio of Suravi Prakash - Computer Science Student, Cybersecurity & ML Enthusiast" />
+  
+  <!-- Prevent flash of unstyled theme -->
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="container nav-wrapper">
+      <a href="#" class="brand-logo">
+        <i data-lucide="shield-check" class="brand-icon"></i>
+        <span>Suravi</span>Prakash
+      </a>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <i data-lucide="moon" id="themeIcon"></i>
+        </button>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+          <i data-lucide="menu" id="menuIcon"></i>
+        </button>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="btn-nav">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          Seeking Internships
+        </div>
+        <h1 class="hero-title">
+          Hii <span>I'm Suravi</span>,
+        </h1>
+        <p class="hero-intro">
+          A Computer Science undergrad passionate about coding.
+          I enjoy building practical solutions, from machine learning-based threat detection to full-stack applications in Python and Java.
+          Strong in data structures, algorithms and network security.
+          I approach every problem by breaking it down, experimenting and refining until it works.
+          Cybersecurity enthusiast, currently exploring how AI and security can come together to create systems that are both smart and reliable. Always eager to learn, build, and take on new challenges.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            View Projects <i data-lucide="arrow-right" size="18"></i>
+          </a>
+          <a href="https://github.com/suravi29" target="_blank" rel="noopener noreferrer" class="btn btn-pill">
+            <i data-lucide="github" size="18"></i>
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/suravi-prakash-264b55369" target="_blank" rel="noopener noreferrer" class="btn btn-pill">
+            <i data-lucide="linkedin" size="18"></i>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <!-- Profile Image Holder -->
+      <div class="hero-media">
+        <div class="photo-card-wrapper">
+          <div class="photo-container">
+            <img 
+              src="assets/profile.jpg" 
+              alt="Suravi Prakash" 
+              class="profile-img" 
+              onerror="this.style.display='none'; document.getElementById('photoPlaceholder').style.display='flex';"
+            />
+            <div class="photo-placeholder" id="photoPlaceholder">
+              <i data-lucide="user" size="64"></i>
+              <span>Add photo to assets/profile.jpg</span>
+            </div>
+          </div>
+          <div class="floating-badge badge-top">
+            <i data-lucide="award" size="18"></i>
+            <div>
+              <strong>9.1 CGPA</strong>
+              <small>B.Tech CSE</small>
+            </div>
+          </div>
+          <div class="floating-badge badge-bottom">
+            <i data-lucide="terminal" size="18"></i>
+            <div>
+              <strong>Curious Coder</strong>
+              <small>Puzzles, places, pixels.</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text-card">
+          
+          <h2 class="section-title">About Me</h2>
+          <p>
+            A curious coder who loves solving puzzles.
+            Travel is my thing: going to different places, soaking in the beauty of nature and admiring the world around me. 
+            Clicking random pictures of everything that catches my eye fills my heart and my gallery.   
+            I listen to way too much K-pop.
+            I'm always up for trying something new. That mindset shapes how I build things too: I like exploring, experimenting, and figuring out how things work.
+          </p>
+        </div>
+
+        <div class="quick-facts-card">
+          <h3 class="facts-title">At a Glance</h3>
+          <ul class="fact-list">
+            <li>
+              <i data-lucide="map-pin"></i>
+              <span><strong>Location:</strong> Bengaluru, India</span>
+            </li>
+            <li>
+              <i data-lucide="graduation-cap"></i>
+              <span><strong>University:</strong> Garden City University</span>
+            </li>
+            <li>
+              <i data-lucide="cpu"></i>
+              <span><strong>Focus Areas:</strong> Cybersecurity, Data Science</span>
+            </li>
+            <li>
+              <i data-lucide="check-circle-2"></i>
+              <span><strong>Status:</strong> Ready for Internships</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-heading">
+        
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">A selection of systems I've built spanning AI research, security tools, and interactive applications.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-icon-box">
+              <i data-lucide="network" size="22"></i>
+            </div>
+            <a href="https://github.com/suravi29" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Project Repository">
+              <i data-lucide="external-link" size="18"></i>
+            </a>
+          </div>
+          <h3 class="project-name">Network Intrusion Detection System</h3>
+          <p class="project-summary">
+            Machine learning classifier trained on the NSL-KDD benchmark dataset to identify normal vs. malicious traffic in real time, accompanied by a lightweight Flask threat-analytics dashboard.
+          </p>
+          <div class="tag-row">
+            <span class="pill-tag">Python</span>
+            <span class="pill-tag">Flask</span>
+            <span class="pill-tag">Scikit-learn</span>
+            <span class="pill-tag">Cybersecurity</span>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-icon-box">
+              <i data-lucide="bot" size="22"></i>
+            </div>
+            <a href="https://github.com/suravi29" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Project Repository">
+              <i data-lucide="external-link" size="18"></i>
+            </a>
+          </div>
+          <h3 class="project-name">Pixel2World: Multi-Agent 3D Terrain AI</h3>
+          <p class="project-summary">
+            Research paper submitted to AISUMMIT-2026 proposing a stateful multi-agent system translating 2D pixel maps into 3D Unity terrains with vision feedback and self-correction via Groq VLMs.
+          </p>
+          <div class="tag-row">
+            <span class="pill-tag">Multi-Agent AI</span>
+            <span class="pill-tag">Groq API</span>
+            <span class="pill-tag">Unity</span>
+            <span class="pill-tag">Vision-Language</span>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-icon-box">
+              <i data-lucide="hand" size="22"></i>
+            </div>
+            <a href="https://github.com/suravi29" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Project Repository">
+              <i data-lucide="external-link" size="18"></i>
+            </a>
+          </div>
+          <h3 class="project-name">Gesture-Controlled Image Puzzle</h3>
+          <p class="project-summary">
+            Touch-free puzzle game utilizing MediaPipe and OpenCV for real-time hand skeleton tracking and pinch-gesture detection with live visual game mechanics.
+          </p>
+          <div class="tag-row">
+            <span class="pill-tag">Python</span>
+            <span class="pill-tag">OpenCV</span>
+            <span class="pill-tag">MediaPipe</span>
+            <span class="pill-tag">Computer Vision</span>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-icon-box">
+              <i data-lucide="book-open" size="22"></i>
+            </div>
+            <a href="https://github.com/suravi29" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Project Repository">
+              <i data-lucide="external-link" size="18"></i>
+            </a>
+          </div>
+          <h3 class="project-name">Online Library Management System</h3>
+          <p class="project-summary">
+            Desktop application featuring role-based authentication, book reservation mechanisms, fine calculations, and persistent transactional storage via JDBC and SQLite.
+          </p>
+          <div class="tag-row">
+            <span class="pill-tag">Java</span>
+            <span class="pill-tag">Swing</span>
+            <span class="pill-tag">SQLite</span>
+            <span class="pill-tag">OOP</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-heading">
+        
+        <h2 class="section-title">Technical Skills</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-category-card">
+          <div class="skill-card-top">
+            <i data-lucide="code" class="category-icon"></i>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="chip">Python</span>
+            <span class="chip">Java</span>
+            <span class="chip">SQL</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">HTML5 / CSS3</span>
+          </div>
+        </div>
+
+        <div class="skill-category-card">
+          <div class="skill-card-top">
+            <i data-lucide="shield" class="category-icon"></i>
+            <h3>Cybersecurity</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="chip">Network Security</span>
+            <span class="chip">Intrusion Detection</span>
+            <span class="chip">Threat Mitigation</span>
+            <span class="chip">Linux Security</span>
+          </div>
+        </div>
+
+        <div class="skill-category-card">
+          <div class="skill-card-top">
+            <i data-lucide="database" class="category-icon"></i>
+            <h3>Backend & ML</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="chip">Flask</span>
+            <span class="chip">JDBC / SQLite</span>
+            <span class="chip">Scikit-learn</span>
+            <span class="chip">Pandas & NumPy</span>
+          </div>
+        </div>
+
+        <div class="skill-category-card">
+          <div class="skill-card-top">
+            <i data-lucide="wrench" class="category-icon"></i>
+            <h3>Core & Developer Tools</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="chip">Data Structures</span>
+            <span class="chip">Algorithms</span>
+            <span class="chip">Git & GitHub</span>
+            <span class="chip">VS Code</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section experience-section" id="experience">
+    <div class="container">
+      <div class="section-heading">
+        
+        <h2 class="section-title">Experience</h2>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-block">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-role">IT Intern</span>
+              <span class="timeline-date">June 2026 (1 Month)</span>
+            </div>
+            <h3 class="timeline-org">Hindustan Aeronautics Limited (HAL)</h3>
+            <p class="timeline-details">
+              Observed enterprise server-room infrastructure and mission-critical operations to understand large-scale IT and data-center administration. Gained hands-on familiarity with security protocols, hardware segregation, and collaborative workflows in an engineering aerospace environment.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-block">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-role">Research Co-Author</span>
+              <span class="timeline-date">2026</span>
+            </div>
+            <h3 class="timeline-org">AISUMMIT-2026 Submission</h3>
+            <p class="timeline-details">
+              Co-authored <em>Pixel2World: An Iterative Multi-Agent System for Translating 2D Pixel Maps to 3D Gaming Terrains</em>. Spearheaded the literature synthesis, model evaluations, and depth pipeline integrations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section education-section" id="education">
+    <div class="container">
+      <div class="section-heading">
+        
+        <h2 class="section-title">Education</h2>
+      </div>
+
+      <div class="education-grid">
+        <div class="edu-card">
+          <div class="edu-header">
+            <i data-lucide="graduation-cap" class="edu-icon"></i>
+            <span class="edu-year">2023 – 2027</span>
+          </div>
+          <h3 class="edu-degree">B.Tech in Computer Science & Engineering</h3>
+          <p class="edu-school">Garden City University, Bengaluru</p>
+          <div class="edu-score-pill">CGPA: 9.1 / 10.0</div>
+          <p class="edu-note">Volunteer Organizer for Smart India Hackathon; focused on network security and advanced algorithmic design.</p>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-header">
+            <i data-lucide="school" class="edu-icon"></i>
+            <span class="edu-year">2021 – 2023</span>
+          </div>
+          <h3 class="edu-degree">Class XII (PCMC)</h3>
+          <p class="edu-school">Krupanidhi Residential PU College, Bengaluru</p>
+          <div class="edu-score-pill">Score: 89%</div>
+          <p class="edu-note">Physics, Chemistry, Mathematics, and Computer Science foundation.</p>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-header">
+            <i data-lucide="book-check" class="edu-icon"></i>
+            <span class="edu-year">2021</span>
+          </div>
+          <h3 class="edu-degree">Class X (ICSE)</h3>
+          <p class="edu-school">HAL Gnanajyoti School, Bengaluru</p>
+          <div class="edu-score-pill">Score: 94%</div>
+          <p class="edu-note">Excellence in mathematics and scientific problem solving.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="section certifications-section" id="certifications">
+    <div class="container">
+      <div class="section-heading">
+        
+        <h2 class="section-title">Certifications</h2>
+      </div>
+
+      <div class="cert-grid">
+        <div class="cert-card">
+          <i data-lucide="shield-check" class="cert-icon"></i>
+          <div>
+            <h4>Google Cybersecurity Professional Certificate</h4>
+            <p>Hands-on network threat modeling, Linux defense, and SIEM security analytics.</p>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <i data-lucide="bar-chart-2" class="cert-icon"></i>
+          <div>
+            <h4>IBM Data Science</h4>
+            <p>Data methodologies, regression analysis, and machine learning model validation.</p>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <i data-lucide="terminal-square" class="cert-icon"></i>
+          <div>
+            <h4>Data Science Essentials with Python</h4>
+            <p>High-efficiency mathematical computing with NumPy, Pandas, and Scikit-learn.</p>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <i data-lucide="layers" class="cert-icon"></i>
+          <div>
+            <h4>Data Structures & Backend with Java</h4>
+            <p>Algorithmic optimization, object-oriented design patterns, and database connectivity.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-box">
+        <h2 class="contact-title">Let's Connect</h2>
+        <p class="contact-sub">
+          Looking for an enthusiastic engineer who cares about security, clean code, and reliable architecture? My inbox is always open.
+        </p>
+
+        <div class="contact-links-grid">
+          <a href="mailto:suraviprakash29@gmail.com" class="contact-action-btn">
+            <i data-lucide="mail"></i>
+            <span>suraviprakash29@gmail.com</span>
+          </a>
+          <a href="tel:+919483405397" class="contact-action-btn">
+            <i data-lucide="phone"></i>
+            <span>+91 9483405397</span>
+          </a>
+          <a href="https://linkedin.com/in/suravi-prakash-264b55369" target="_blank" rel="noopener noreferrer" class="contact-action-btn">
+            <i data-lucide="linkedin"></i>
+            <span>LinkedIn Profile</span>
+          </a>
+          <a href="https://github.com/suravi29" target="_blank" rel="noopener noreferrer" class="contact-action-btn">
+            <i data-lucide="github"></i>
+            <span>GitHub Profile</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <p>Thanks for stopping by. Let's build something great.</p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
